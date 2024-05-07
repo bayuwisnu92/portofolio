@@ -1,0 +1,24 @@
+/* Menetapkan semua link navbar untuk rata ke kanan */
+.navbar-nav {
+    margin-right: auto;
+  }
+  /* style UNTUK SECTION PERTANA */
+  .section-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  /* Gaya untuk kotak kiri */
+  .left-box {
+    width: 70%;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+
+  /* Gaya untuk kotak kanan */
+  .right-box {
+    width: 30%;
+    background-color: #e0e0e0;
+    padding: 20px;
+  }
