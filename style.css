@@ -1,6 +1,19 @@
 /* Menetapkan semua link navbar untuk rata ke kanan */
+.navbar{
+    color:aliceblue;
+    background-color:white ;
+    box-shadow:0 0 0 4px rgba(0,0,0, 0.25);
+}
 .navbar-nav {
-    margin-right: auto;
+    margin-left: 715px;
+    color:white ;
+  }
+  .nav-item > a{
+    color: black;
+  }
+  .navbar-brand {
+    color: black;
+    font-size: 30px;
   }
   /* style UNTUK SECTION PERTANA */
   .section-container {
@@ -11,14 +24,19 @@
 
   /* Gaya untuk kotak kiri */
   .left-box {
-    width: 70%;
+    width: 60%;
     background-color: #f0f0f0;
     padding: 20px;
   }
 
   /* Gaya untuk kotak kanan */
   .right-box {
-    width: 30%;
+    width: 20%;
     background-color: #e0e0e0;
     padding: 20px;
+  }
+  @media only screen and (max-width: 600px) {
+   .navbar-nav{
+    margin-left: 0px;
+   }
   }
