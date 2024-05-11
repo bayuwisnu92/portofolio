@@ -13,20 +13,23 @@
 <nav class="navbar navbar-expand-lg ">
   <div class="container">
   <a class="navbar-brand fs-6 fw-bold" href="#">Bayu</a>
-  <img src="image/bayu.JPG" width="35px" height="50px" alt="">
+  <div class="d-flex justify-content-center"><img src="image/bayu.JPG" width="35px" height="50px" alt=""></div>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ms-auto" >
       <li class="nav-item">
-        <a class="nav-link" href="#contact">Kontak</a>
+        <a class="nav-link" href="#home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#about">Tentang</a>
+        <a class="nav-link" href="#about">about</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#data">Data Diri</a>
+        <a class="nav-link" href="#work">work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">contact</a>
       </li>
     </ul>
   </div>
@@ -36,23 +39,23 @@
 
 
 <section id="home" class="home container">
-<div class="row d-flex align-items-center">
-  <div class="col-8">
+<div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+  <div class="col-12 col-md-8">
     <h3 class="fw-semibold">hi im</h3>
     <h1 class="fw-bold">Bayu wisnu aji</h1>
     <p>i am software enginer from indonesia</p>
     <a class="btn" href="image/potrait.png" download>resume</a>
     
   </div>
-  <div class="col-4">
-    <img src="image/bayu.JPG" width="180px" height="300px" alt="potrait">
+  <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+    <img id="gambar" src="image/bayu2.png" width="180px" height="300px" alt="potrait">
   </div>
 
 </div>
-<div class="arrow d-flex align-items-center flex-column mt-5">
-  <a href="#about">more info</a>
+<a id="panah" href="#about" class="arrow d-flex align-items-center flex-column mt-5">
+  <div>more info</div>
   <img id="arrow" src="image/arrow.svg" alt="">
-</div>
+</a>
 
 </section>
 <section id="about" class="about container">
@@ -93,10 +96,10 @@
 </section>
 <section id="work" class="work container">
   <div class="row d-flex align-items-center gap-5">
-      <div class="col">
+      <div class="col-12 col-lg-5">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione at aspernatur, similique repellendus cum obcaecati necessitatibus, ullam odio minima iure minus inventore, nobis hic dolorum sed. Debitis voluptas quo, veniam repellat est odit assumenda, ea beatae facilis aliquam maxime ab magnam. Provident iste esse officiis deserunt laborum repellendus, architecto placeat?</p>
       </div>
-      <div class="col work-img">
+      <div class="col-12 col-lg-6 work-img">
           <div id="work-1" class="work-img-item">    
               <img src="image/work-1.png" alt="work 1" >
           </div>
@@ -111,22 +114,25 @@
 </section>
 <section id="contact" class="contact container">
 <div class="row d-flex align-items-center gap-5" >
-<div class="col">
+<div class="col col-12 col-lg-6">
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, vel. Fugit ullam optio maxime quasi nemo eos exercitationem quidem, magnam nihil praesentium ipsa est, deleniti dolores amet a distinctio atque?</p>
   <div class="row">
-    <div class="col">
+    <div class="col d-flex align-items-center">
       <img src="image/Facebook.svg" alt="">
+      <p>bayuwisnu92</p>
     </div>
-    <div class="col">
+    <div class="col d-flex align-items-center">
       <img src="image/Instagram.svg" alt="">
+      <p>bayuwisnu92</p>
     </div>
-    <div class="col">
+    <div class="col d-flex align-items-center">
       <img src="image/Twitter.svg" alt="">
+      <p>bayuwisnu92</p>
     </div>
   </div>
 </div>
 
-<div class="col forn">
+<div class="col form col-12 col-lg-5">
   <form onsubmit="onFromSubmit(event)">
     <div class="mb-3">
       <label for="inp_email" class="form-label">Email address</label>
