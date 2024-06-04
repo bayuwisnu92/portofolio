@@ -68,3 +68,15 @@ function onFromSubmit(e){
 
 }
 
+function ubahWarna() {
+  const slider = document.getElementById('slider');
+  const label = document.getElementById('label');
+  const siang = slider.value == 1;
+  
+  document.body.style.backgroundColor = siang ? 'white' : 'black';
+  document.body.style.color = siang ? 'black' : 'white';
+  label.innerHTML = siang ? 'siang' : 'malam';
+}
+
+
+
